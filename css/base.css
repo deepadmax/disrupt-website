@@ -30,3 +30,16 @@ section.white {
 a[href] {
     color: inherit;
 }
+
+
+
+/* HEADER with TITLE and SLOGAN */
+
+span#header {
+    margin: 0 0 1rem 0;
+    padding: 0 1rem;
+}
+
+span#header > * {
+    margin: 0.8rem;
+}
