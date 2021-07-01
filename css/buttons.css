@@ -1,0 +1,97 @@
+/* BUTTON */
+
+a.button {
+    --text-color: #313155;
+    --primary-color: white;
+    --secondary-color: #6f75b6;
+    
+    position: relative;
+    display: inline-block;
+
+    top: 0;
+    padding: 0.8rem 3ch;
+    margin: 0.8ch 0;
+
+    border-radius: 0.75ch;
+    border: 1px solid var(--secondary-color);
+
+    box-sizing: border-box;
+    text-decoration: none;
+
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+
+    color: var(--text-color);
+    background-color: var(--primary-color);
+
+    box-shadow: 0 0.8ch 0 0 var(--secondary-color);
+
+    text-decoration: none;
+}
+
+@media (max-width: 85ch) {
+    a.button {
+        width: 100%;
+    }
+}
+
+a.button:hover {
+    box-shadow: 0 0.5ch 0 0 var(--secondary-color);
+    top: 0.3ch;
+}
+
+a.button:active {
+    box-shadow: 0 0.3ch 0 0 var(--secondary-color);
+    top: 0.5ch;
+}
+
+a.button:before {
+    display: block;
+    position: absolute;
+    
+    content: '';
+    background-color: transparent;
+
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+}
+
+a.button:hover:before {
+    height: 1ch;
+}
+
+
+/* BUTTON THEMES */
+
+a.button.red {
+    --text-color:white;
+    --primary-color: #e43f55;
+    --secondary-color:#792a5e;
+}
+
+a.button.orange {
+    --text-color: black;
+    --primary-color: yellow;
+    --secondary-color: orange;
+}
+
+a.button.discord {
+    --text-color: white;
+    --primary-color:  #6776e9;
+    --secondary-color: #3b3a75;
+} 
+
+a.button.matrix {
+    --text-color: white;
+    --primary-color: #3ac09a;
+    --secondary-color: #0b526e;
+}
+
+a.button.twitch {
+    --text-color: black;
+    --primary-color: #FFFFFF;
+    --secondary-color: #9147FF;
+}
