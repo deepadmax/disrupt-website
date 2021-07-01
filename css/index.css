@@ -1,0 +1,33 @@
+/* HEADER with TITLE and SLOGAN */
+
+span#header {
+    padding: 0 1rem;
+}
+
+span#header > * {
+    margin: 0.8rem;
+}
+
+
+/* LIST of INTEGRATED APPLICATIONS */
+
+ul.apps {
+    padding: 3ch 3ch 0ch 3ch;
+
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5em;
+}
+
+@media (max-width: 85ch) {
+    ul.apps {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+ul.apps li {
+    padding: 0.3rem 0;
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+body {
+    max-width: 110ch;
+    margin: auto auto;
+    padding: 2px;
+
+    background-color: #111111;
+    
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+section {
+    padding: 1rem 4ch;
+}
+
+
+section.white {
+    margin: 1rem 0;
+
+    background-color: white;
+    border-radius: 2ch;
+    
+    color: black;
+}
+
+
+a[href] {
+    color: inherit;
+}
